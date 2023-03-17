@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B5F48540C6200959B8EF3B /* Pods_cctv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA383C810D0E7AF14B873F /* Pods_cctv.framework */; };
+		7CD15CE929C4428600CFE585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15CE829C4428600CFE585 /* AppDelegate.swift */; };
+		7CD15CEB29C4428600CFE585 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15CEA29C4428600CFE585 /* SceneDelegate.swift */; };
+		7CD15CF029C4428600CFE585 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD15CEE29C4428600CFE585 /* Main.storyboard */; };
+		7CD15CF229C4428800CFE585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD15CF129C4428800CFE585 /* Assets.xcassets */; };
+		7CD15CF529C4428800CFE585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD15CF329C4428800CFE585 /* LaunchScreen.storyboard */; };
+		7CD15CFD29C4467300CFE585 /* MqttClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD15CFC29C4467300CFE585 /* MqttClient.swift */; };
+		C81DA8412A0CCB7500B36390 /* ChatBotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81DA8402A0CCB7500B36390 /* ChatBotViewController.swift */; };
+		C81DA84B2A124A2000B36390 /* cafe.png in Resources */ = {isa = PBXBuildFile; fileRef = C81DA84A2A124A2000B36390 /* cafe.png */; };
+		C81DA84D2A124A4600B36390 /* busStop.png in Resources */ = {isa = PBXBuildFile; fileRef = C81DA84C2A124A4600B36390 /* busStop.png */; };
+		C81DA84F2A124A6800B36390 /* convenience.png in Resources */ = {isa = PBXBuildFile; fileRef = C81DA84E2A124A6800B36390 /* convenience.png */; };
+		C81DA8512A14C77100B36390 /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81DA8502A14C77100B36390 /* ImageViewerViewController.swift */; };
+		C81DA8572A15F40600B36390 /* MqttManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81DA8562A15F40600B36390 /* MqttManager.swift */; };
+		C81DA85D2A1758D800B36390 /* redCCTV.png in Resources */ = {isa = PBXBuildFile; fileRef = C81DA85C2A1758D800B36390 /* redCCTV.png */; };
+		C81DA85F2A1758FF00B36390 /* CCTV.png in Resources */ = {isa = PBXBuildFile; fileRef = C81DA85E2A1758FF00B36390 /* CCTV.png */; };
+		C82A6FBA29E011990008CB0B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82A6FB929E011990008CB0B /* MapViewController.swift */; };
+		C84C453A2A25F01500C4950D /* DoeunLongPressGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84C45392A25F01500C4950D /* DoeunLongPressGestureRecognizer.swift */; };
+		C84C453E2A25F72700C4950D /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = C84C453D2A25F72600C4950D /* compass.png */; };
+		C84C45602A27430F00C4950D /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C84C455F2A27430F00C4950D /* logo.png */; };
+		C84C45622A2753E800C4950D /* ChatBot.png in Resources */ = {isa = PBXBuildFile; fileRef = C84C45612A2753E800C4950D /* ChatBot.png */; };
+		C84C456A2A2872A800C4950D /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = C84C45692A2872A800C4950D /* profile.png */; };
+		C84C45702A289E5700C4950D /* PinLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84C456F2A289E5700C4950D /* PinLocationViewController.swift */; };
+		C84C45742A28B24900C4950D /* 20.png in Resources */ = {isa = PBXBuildFile; fileRef = C84C45732A28B24900C4950D /* 20.png */; };
+		C86C82862A090B8200C1424A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C82852A090B8200C1424A /* ChatViewController.swift */; };
+		C86C828A2A0BD10F00C1424A /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C82892A0BD10F00C1424A /* BaseCollectionViewCell.swift */; };
+		C86C828E2A0BD1BF00C1424A /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C828D2A0BD1BF00C1424A /* ChatMessageCell.swift */; };
+		C86C82902A0BD45C00C1424A /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C828F2A0BD45C00C1424A /* Mock.swift */; };
+		C86C82922A0BD56E00C1424A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C82912A0BD56E00C1424A /* String.swift */; };
+		C86C82942A0BD5A900C1424A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86C82932A0BD5A900C1424A /* UIView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A587BC4A9D5FAE58D9F1DDF /* Pods-cctv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cctv.release.xcconfig"; path = "Target Support Files/Pods-cctv/Pods-cctv.release.xcconfig"; sourceTree = "<group>"; };
+		1BB99628B0718E690B168A03 /* Pods-cctv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cctv.debug.xcconfig"; path = "Target Support Files/Pods-cctv/Pods-cctv.debug.xcconfig"; sourceTree = "<group>"; };
+		4CBA383C810D0E7AF14B873F /* Pods_cctv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cctv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CD15CE529C4428600CFE585 /* cctv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cctv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CD15CE829C4428600CFE585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CD15CEA29C4428600CFE585 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7CD15CEF29C4428600CFE585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CD15CF129C4428800CFE585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CD15CF429C4428800CFE585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CD15CF629C4428800CFE585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CD15CFC29C4467300CFE585 /* MqttClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttClient.swift; sourceTree = "<group>"; };
+		C81DA8402A0CCB7500B36390 /* ChatBotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotViewController.swift; sourceTree = "<group>"; };
+		C81DA84A2A124A2000B36390 /* cafe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cafe.png; sourceTree = "<group>"; };
+		C81DA84C2A124A4600B36390 /* busStop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = busStop.png; sourceTree = "<group>"; };
+		C81DA84E2A124A6800B36390 /* convenience.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = convenience.png; sourceTree = "<group>"; };
+		C81DA8502A14C77100B36390 /* ImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
+		C81DA8562A15F40600B36390 /* MqttManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttManager.swift; sourceTree = "<group>"; };
+		C81DA85C2A1758D800B36390 /* redCCTV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redCCTV.png; sourceTree = "<group>"; };
+		C81DA85E2A1758FF00B36390 /* CCTV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCTV.png; sourceTree = "<group>"; };
+		C82A6FB929E011990008CB0B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C84C45392A25F01500C4950D /* DoeunLongPressGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoeunLongPressGestureRecognizer.swift; sourceTree = "<group>"; };
+		C84C453D2A25F72600C4950D /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass.png; sourceTree = "<group>"; };
+		C84C455F2A27430F00C4950D /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		C84C45612A2753E800C4950D /* ChatBot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChatBot.png; sourceTree = "<group>"; };
+		C84C45692A2872A800C4950D /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		C84C456F2A289E5700C4950D /* PinLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinLocationViewController.swift; sourceTree = "<group>"; };
+		C84C45732A28B24900C4950D /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20.png; sourceTree = "<group>"; };
+		C86C82852A090B8200C1424A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		C86C82892A0BD10F00C1424A /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		C86C828D2A0BD1BF00C1424A /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		C86C828F2A0BD45C00C1424A /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		C86C82912A0BD56E00C1424A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		C86C82932A0BD5A900C1424A /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CD15CE229C4428600CFE585 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B5F48540C6200959B8EF3B /* Pods_cctv.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27124363D820D2239D044414 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA383C810D0E7AF14B873F /* Pods_cctv.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40421CBD182A078B28593363 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BB99628B0718E690B168A03 /* Pods-cctv.debug.xcconfig */,
+				0A587BC4A9D5FAE58D9F1DDF /* Pods-cctv.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7CD15CDC29C4428600CFE585 = {
+			isa = PBXGroup;
+			children = (
+				7CD15CE729C4428600CFE585 /* cctv */,
+				7CD15CE629C4428600CFE585 /* Products */,
+				40421CBD182A078B28593363 /* Pods */,
+				27124363D820D2239D044414 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7CD15CE629C4428600CFE585 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CD15CE529C4428600CFE585 /* cctv.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CD15CE729C4428600CFE585 /* cctv */ = {
+			isa = PBXGroup;
+			children = (
+				C81DA84C2A124A4600B36390 /* busStop.png */,
+				C81DA84A2A124A2000B36390 /* cafe.png */,
+				C81DA85C2A1758D800B36390 /* redCCTV.png */,
+				C84C45612A2753E800C4950D /* ChatBot.png */,
+				C84C45732A28B24900C4950D /* 20.png */,
+				C84C455F2A27430F00C4950D /* logo.png */,
+				C84C45692A2872A800C4950D /* profile.png */,
+				C81DA85E2A1758FF00B36390 /* CCTV.png */,
+				C84C453D2A25F72600C4950D /* compass.png */,
+				C81DA84E2A124A6800B36390 /* convenience.png */,
+				7CD15CE829C4428600CFE585 /* AppDelegate.swift */,
+				7CD15CEA29C4428600CFE585 /* SceneDelegate.swift */,
+				7CD15CEE29C4428600CFE585 /* Main.storyboard */,
+				7CD15CF129C4428800CFE585 /* Assets.xcassets */,
+				7CD15CF329C4428800CFE585 /* LaunchScreen.storyboard */,
+				7CD15CF629C4428800CFE585 /* Info.plist */,
+				C82A6FB929E011990008CB0B /* MapViewController.swift */,
+				C86C82852A090B8200C1424A /* ChatViewController.swift */,
+				C81DA8402A0CCB7500B36390 /* ChatBotViewController.swift */,
+				C81DA8502A14C77100B36390 /* ImageViewerViewController.swift */,
+				C84C456F2A289E5700C4950D /* PinLocationViewController.swift */,
+				C86C828D2A0BD1BF00C1424A /* ChatMessageCell.swift */,
+				C86C82892A0BD10F00C1424A /* BaseCollectionViewCell.swift */,
+				C86C828F2A0BD45C00C1424A /* Mock.swift */,
+				7CD15CFC29C4467300CFE585 /* MqttClient.swift */,
+				C86C82912A0BD56E00C1424A /* String.swift */,
+				C86C82932A0BD5A900C1424A /* UIView.swift */,
+				C81DA8562A15F40600B36390 /* MqttManager.swift */,
+				C84C45392A25F01500C4950D /* DoeunLongPressGestureRecognizer.swift */,
+			);
+			path = cctv;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CD15CE429C4428600CFE585 /* cctv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CD15CF929C4428800CFE585 /* Build configuration list for PBXNativeTarget "cctv" */;
+			buildPhases = (
+				C5DD5D30791AB9772EE5EFFE /* [CP] Check Pods Manifest.lock */,
+				7CD15CE129C4428600CFE585 /* Sources */,
+				7CD15CE229C4428600CFE585 /* Frameworks */,
+				7CD15CE329C4428600CFE585 /* Resources */,
+				D1F321FE7B53CB7B049898B6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cctv;
+			productName = cctv;
+			productReference = 7CD15CE529C4428600CFE585 /* cctv.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CD15CDD29C4428600CFE585 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					7CD15CE429C4428600CFE585 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 7CD15CE029C4428600CFE585 /* Build configuration list for PBXProject "cctv" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CD15CDC29C4428600CFE585;
+			productRefGroup = 7CD15CE629C4428600CFE585 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CD15CE429C4428600CFE585 /* cctv */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CD15CE329C4428600CFE585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84C45742A28B24900C4950D /* 20.png in Resources */,
+				C81DA84D2A124A4600B36390 /* busStop.png in Resources */,
+				7CD15CF529C4428800CFE585 /* LaunchScreen.storyboard in Resources */,
+				C84C456A2A2872A800C4950D /* profile.png in Resources */,
+				C81DA84B2A124A2000B36390 /* cafe.png in Resources */,
+				C84C45622A2753E800C4950D /* ChatBot.png in Resources */,
+				7CD15CF229C4428800CFE585 /* Assets.xcassets in Resources */,
+				7CD15CF029C4428600CFE585 /* Main.storyboard in Resources */,
+				C84C453E2A25F72700C4950D /* compass.png in Resources */,
+				C81DA85F2A1758FF00B36390 /* CCTV.png in Resources */,
+				C84C45602A27430F00C4950D /* logo.png in Resources */,
+				C81DA85D2A1758D800B36390 /* redCCTV.png in Resources */,
+				C81DA84F2A124A6800B36390 /* convenience.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5DD5D30791AB9772EE5EFFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cctv-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1F321FE7B53CB7B049898B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cctv/Pods-cctv-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cctv/Pods-cctv-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cctv/Pods-cctv-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CD15CE129C4428600CFE585 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86C82942A0BD5A900C1424A /* UIView.swift in Sources */,
+				7CD15CFD29C4467300CFE585 /* MqttClient.swift in Sources */,
+				C84C45702A289E5700C4950D /* PinLocationViewController.swift in Sources */,
+				C86C828A2A0BD10F00C1424A /* BaseCollectionViewCell.swift in Sources */,
+				C82A6FBA29E011990008CB0B /* MapViewController.swift in Sources */,
+				C86C82922A0BD56E00C1424A /* String.swift in Sources */,
+				C84C453A2A25F01500C4950D /* DoeunLongPressGestureRecognizer.swift in Sources */,
+				7CD15CE929C4428600CFE585 /* AppDelegate.swift in Sources */,
+				C81DA8512A14C77100B36390 /* ImageViewerViewController.swift in Sources */,
+				C86C828E2A0BD1BF00C1424A /* ChatMessageCell.swift in Sources */,
+				C81DA8572A15F40600B36390 /* MqttManager.swift in Sources */,
+				C86C82862A090B8200C1424A /* ChatViewController.swift in Sources */,
+				7CD15CEB29C4428600CFE585 /* SceneDelegate.swift in Sources */,
+				C81DA8412A0CCB7500B36390 /* ChatBotViewController.swift in Sources */,
+				C86C82902A0BD45C00C1424A /* Mock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7CD15CEE29C4428600CFE585 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CD15CEF29C4428600CFE585 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CD15CF329C4428800CFE585 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CD15CF429C4428800CFE585 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CD15CF729C4428800CFE585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7CD15CF829C4428800CFE585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CD15CFA29C4428800CFE585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB99628B0718E690B168A03 /* Pods-cctv.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KUAV85P94F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cctv/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "골목티비";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dodo.hansung.ac.kr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CD15CFB29C4428800CFE585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A587BC4A9D5FAE58D9F1DDF /* Pods-cctv.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KUAV85P94F;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cctv/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "골목티비";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dodo.hansung.ac.kr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CD15CE029C4428600CFE585 /* Build configuration list for PBXProject "cctv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CD15CF729C4428800CFE585 /* Debug */,
+				7CD15CF829C4428800CFE585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CD15CF929C4428800CFE585 /* Build configuration list for PBXNativeTarget "cctv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CD15CFA29C4428800CFE585 /* Debug */,
+				7CD15CFB29C4428800CFE585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CD15CDD29C4428600CFE585 /* Project object */;
+}
